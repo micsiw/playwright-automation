@@ -27,7 +27,7 @@ export default class AddCustomerModule {
     await this.getPostCodeInput.type(postCode);
   }
 
-  async addCustomer() {
+  async add() {
     await this.getAddCustomerButton.click();
   }
 }

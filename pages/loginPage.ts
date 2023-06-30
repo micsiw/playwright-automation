@@ -1,6 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 
-export default class loginPage {
+export default class LoginPage {
   readonly page: Page;
   readonly getCustomerLoginButton: Locator;
   readonly getManagerLoginButton: Locator;
@@ -16,7 +16,9 @@ export default class loginPage {
   }
 
   async goto() {
-    await this.page.goto("/");
+    await this.page.goto(
+      "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"
+    );
   }
 
   async loginAsCustomer() {
