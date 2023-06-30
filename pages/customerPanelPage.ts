@@ -12,7 +12,7 @@ export default class CustomerPanel {
   constructor(page: Page) {
     this.page = page;
     this.getAccountSelectionDropdown = page.locator(
-      "//select[@id='accountSelect']]"
+      "//select[@id='accountSelect']"
     );
     this.getSelectedAccount = page.locator(
       "//div[@ng-hide='noAccount'][1]//strong[1]"

@@ -5,10 +5,7 @@ export default defineConfig({
   fullyParallel: true,
   reporter: [["list"], ["html"]],
   use: {
-    headless: false,
-    // launchOptions: {
-    //   slowMo: 1000,
-    // },
+    headless: true,
   },
   projects: [
     {
@@ -16,14 +13,14 @@ export default defineConfig({
       use: { ...devices["Desktop Chrome"] },
     },
 
-    // {
-    //   name: "firefox",
-    //   use: { ...devices["Desktop Firefox"] },
-    // },
+    {
+      name: "firefox",
+      use: { ...devices["Desktop Firefox"] },
+    },
 
-    // {
-    //   name: "webkit",
-    //   use: { ...devices["Desktop Safari"] },
-    // },
+    {
+      name: "webkit",
+      use: { ...devices["Desktop Safari"] },
+    },
   ],
 });

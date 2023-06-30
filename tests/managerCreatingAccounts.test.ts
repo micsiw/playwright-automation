@@ -6,7 +6,7 @@ import OpenAccountModule from "../pages/managerOpenAccountModulePage";
 import CustomersModule from "../pages/managerCustomersModulePage";
 import customers from "../test-data/customers";
 
-test.describe("Manager creating accounts", () => {
+test.describe("Manager creating accounts - Task 01", () => {
   let login: LoginPage;
   let panel: ManagerPanel;
   let addCustomer: AddCustomerModule;
@@ -44,7 +44,7 @@ test.describe("Manager creating accounts", () => {
     await expect(manageCustomers.getAccounts).toHaveCount(1);
   });
 
-  test("Creating client number 2", async ({ page }) => {
+  test("Creating client number 2", async () => {
     const firstName = customers[1].firstName;
     const lastName = customers[1].lastName;
     const postCode = customers[1].postCode;

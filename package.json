@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.35.1"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
   }
 }
