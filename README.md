@@ -1,4 +1,4 @@
-# zoovu-tech-task
+# playwright-automation
 
 Tech task to automate 2 scenarios on [this](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login) webapp.
 
@@ -8,8 +8,8 @@ Tech task to automate 2 scenarios on [this](https://www.globalsqa.com/angularJs-
 ## Getting started
 
 ```
-git clone git@github.com:micsiw/zoovu-tech-task.git
-cd zoovu-tech-task
+git clone git@github.com:micsiw/playwright-automation.git
+cd playwright-automation
 npm install
 npm test
 ```
